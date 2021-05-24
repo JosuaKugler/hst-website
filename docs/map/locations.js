@@ -8,11 +8,29 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // show the scale bar on the lower left corner
 L.control.scale().addTo(map);
 
-$.getJSON("map/data.json", data => {
+var yellowIcon = L.icon({
+    iconUrl: 'map/marker.svg',
+//    shadowUrl: 'map/leaf-shadow.png',
+
+    iconSize:     [38, 95], // size of the icon
+    shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+    shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+
+
+$.getJSON("map/data.json", async data => {
     for (key in data) {
         value = data[key];
-        console.log(value);
-        L.marker({lat: value.lat, lon: value.lon}).bindPopup(value.name).addTo(map);
+        await $.get(location.protocol + '//nominatim.openstreetmap.org/search?format=json&q='+ value.address, function(data){
+            console.log(data);
+            lon = data[0].lon;
+            lat = data[0].lat;
+            var popupStr = '<strong>' + value.name + '</strong><br>' +  value.address + '<br><br>' + '<a href="#">Anmeldung</a>'
+            L.marker([lat, lon], {icon: yellowIcon}).addTo(map).bindPopup(popupStr);
+        });
     }
 })
 
@@ -20,12 +38,14 @@ $.getJSON("map/data.json", data => {
 /* Open when someone clicks on the span element */
 function openMap() {
     document.getElementById("mapOverlay").style.display = "block";
+    document.body.style.overflow = "hidden";
     map.invalidateSize();
 }
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeMap() {
     document.getElementById("mapOverlay").style.display = "none";
+    document.body.style.overflow = "auto";
 }
 
 // show a marker on the map
