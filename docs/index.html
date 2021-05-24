@@ -29,9 +29,28 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href = "map/map.css">
         <meta name="google-site-verification" content="u78jB1CQw0nbO84n8SiSZQDAo6D8Pitm8ZOTBbmj54c" />
+        <style>
+            body {
+                margin: 0;
+            }
+            html, body, #map {
+                height: 100%;
+                width: 100%;
+            }
+        </style>
     </head>
     <body id="page-top">
+    <!-- Map Overlay -->
+    <div id="mapOverlay" style="display: none; height: 100%; width: 100%; z-index: 1031; position: fixed; left: 0; top: 0;">
+        <div id="map" >
+            <!-- Button to close the overlay navigation -->
+            <button type="button" class="close leaflet-top leaflet-right" style="pointer-events: auto; top: 10px; right: 10px" aria-label="Close" onclick="closeMap()">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container">
@@ -57,11 +76,16 @@
                     </div>
                     <div class="col-lg-8 align-self-baseline">
                         <p class="text-white-75 font-weight-light mb-5">Dieses Jahr werden endlich wieder die Hochschultage der christlichen Hochschulgruppen in Heidelberg veranstaltet!</p>
+                        <!-- Button trigger map -->
+                        <button type="button" class="btn btn-primary" onclick="openMap()">
+                            View Map
+                        </button>
                         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Mehr erfahren</a>
                     </div>
                 </div>
             </div>
         </header>
+
         <!-- About-->
         <section class="page-section bg-primary" id="about">
             <div class="container">
@@ -226,6 +250,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Footer-->
         <footer class="bg-dark py-5">
 
@@ -268,6 +293,14 @@
                 <a href="https://www.pluto-development.de" style="color: black; float: right" class="small">Copyright © Pluto Development 2021</a>
             </div>
         </footer>
+        <!-- Leaflet -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+              integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+              crossorigin=""/>
+        <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+                integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+                crossorigin=""></script>
         <!-- Bootstrap core JS-->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -276,5 +309,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- map JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="map/locations.js"></script>
     </body>
 </html>
