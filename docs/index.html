@@ -25,10 +25,12 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
         <!-- Third party plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/custom_styles.css" rel="stylesheet" />
         <meta name="google-site-verification" content="u78jB1CQw0nbO84n8SiSZQDAo6D8Pitm8ZOTBbmj54c" />
         <style>
             body {
@@ -76,6 +78,70 @@
             </div>
         </header>
 
+        <section class="page-section" id="program">
+
+            <div class="container m-5">
+                <div class="container">
+                    <nav class="navbar">
+                        <ul class="nav nav-pills " id="navList">
+                            <li class="nav-item"><a class="nav-link active day" href="#montag" data-target="#programCarousel" data-slide-to="0" data-toggle="pill">MO</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link day" href="#dienstag" data-target="#programCarousel" data-slide-to="1" data-toggle="pill" daat>DI</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link day" href="#mittwoch" data-target="#programCarousel" data-slide-to="2" data-toggle="pill">MI</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link day" href="#donnerstag" data-target="#programCarousel" data-slide-to="3" data-toggle="pill">DO</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link day" href="#freitag" data-target="#programCarousel" data-slide-to="4" data-toggle="pill">FR</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link day" href="#samstag" data-target="#programCarousel" data-slide-to="5" data-toggle="pill">SA</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Carousel-->
+                <div id="programCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#programCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#programCarousel" data-slide-to="1"></li>
+                        <li data-target="#programCarouse" data-slide-to="2"></li>
+                        <li data-target="#programCarouse" data-slide-to="3"></li>
+                        <li data-target="#programCarouse" data-slide-to="4"></li>
+                        <li data-target="#programCarouse" data-slide-to="5"></li>
+
+                    </ol>
+                    <div class="carousel-inner bg-dark">
+                        <div class="carousel-item active" id="montag" >
+                            <img src="assets/tage/montag.png" class="d-block">
+                        </div>
+                        <div class="carousel-item" id="dienstag" >
+                            <img src="assets/tage/dienstag.png" class="d-block">
+                        </div>
+                        <div class="carousel-item" id="mittwoch">
+                            <img src="assets/tage/mittwoch.png" class="d-block">
+                        </div>
+                        <div class="carousel-item" id="donnerstag">
+                            <img src="assets/tage/donnerstag.png" class="d-block">
+                        </div>
+                        <div class="carousel-item" id="freitag">
+                            <img src="assets/tage/freitag.png" class="d-block">
+                        </div>
+                        <div class="carousel-item" id="samstag">
+                            <img src="assets/tage/samstag.png" class="d-block">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#programCarousel" role="button" data-slide="prev">
+                        <span class="sr-only carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#programCarousel" role="button" data-slide="next">
+                        <span class="sr-only carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
         <!-- About-->
         <section class="page-section bg-primary" id="about">
             <div class="container">
@@ -245,7 +311,7 @@
         <div id="mapOverlay" style="display: none; height: 100%; width: 100%; z-index: 1031; position: fixed; left: 0; top: 0;">
             <div id="map" >
                 <!-- Button to close the overlay navigation -->
-                <button type="button"  onclick="closeMap()" class="btn leaflet-top leaflet-right" style="background-color: white; margin: 1%; pointer-events: auto">
+                <button type="button"  onclick="closeMap()" class="btn shadow border leaflet-top leaflet-right" style="background-color: white; margin: 1%; pointer-events: auto">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                         <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
                     </svg>
@@ -303,15 +369,34 @@
                 integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
                 crossorigin=""></script>
         <!-- Bootstrap core JS-->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <!-- map JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        days = ['montag', 'dienstag', 'mittwoch', 'donnerstag', 'freitag', 'samstag'];
+        //window.onload = function() {console.log("hi"); document.getElementById('programCarousel').addEventListener("slide", function () {console.log("slide event");});}
+        $(document).ready(function() {
+            $('#programCarousel').on('slid.bs.carousel', function (event) {
+                console.log($(this));
+                activeslide = $(this).find('.active')[1];
+                newweekday = activeslide.id;
+                oldweekday = days[(days.indexOf(newweekday) + 5) % 6];
+                oldlink = "a[href='#" + oldweekday + "']"
+                navOldWeekDay = $('#navList').find(oldlink)[0];
+                navOldWeekDay.classList.remove("active");
+                newlink = "a[href='#" + newweekday + "']"
+                navNewWeekDay = $('#navList').find(newlink)[0];
+                navNewWeekDay.classList.add("active");
+            });
+        });
+    </script>
     <script src="map/locations.js"></script>
     </body>
 </html>
