@@ -14,9 +14,30 @@
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
             crossorigin="anonymous"></script>
     <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        html, body, #map {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-<div id="map"></div>
+<!-- The overlay -->
+<div id="mapOverlay" style="display: none; height: 100%; width: 100%; z-index: 1">
+    <div id="map" >
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="leaflet-top leaflet-right" style="pointer-events: auto" onclick="closeMap()">&times;</a>
+    </div>
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<span onclick="openMap()">open</span>
+<!--<div id="map" style="height: 100%" ></div>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="locations.js"></script>
 </body>
 </html>
