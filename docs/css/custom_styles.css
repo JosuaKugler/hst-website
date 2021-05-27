@@ -1,4 +1,6 @@
-
+body {
+    font-family: "Merriweather Sans";
+}
 
 .day {
     font-size: 1.6rem;
@@ -12,15 +14,14 @@
     overflow: hidden;
     margin-bottom: -100px;
     margin-top: -100px;
+    /*background: linear-gradient(to bottom, rgba(248, 249,250,1), rgba(248, 249,250,0.2) 20%, rgba(255, 0,0,0.2) 80%, rgb(255,255,255));
+     */
 }
 
-.mihamm img {
-    width: 400px;
-    height: 600px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px
+.mihamm-img {
+    mask-image: linear-gradient(to bottom, rgba(248, 249,250,0), rgba(248, 249,250,0.8) 30%, rgba(255, 0,0,0.8) 70%, rgba(255, 0,0,0.3) 80%, rgba(0,0,0, 0));
+    /*-webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+     */
 }
 
 @media (max-width: 440px) {
@@ -80,6 +81,9 @@ mobile devices with less than 282 pixel screenwidth have to scroll :(
         padding: 10vw 5vw 10vw 5vw;
         background-color: #fff;
     }
+    .mihamm-scale {
+        padding: 48px;
+    }
 }
 
 /* Landscape tablets and medium desktops */
@@ -87,6 +91,9 @@ mobile devices with less than 282 pixel screenwidth have to scroll :(
     .day-image {
         padding: 10vw 5vw 10vw 5vw;
         background-color: #fff;
+    }
+    .mihamm-scale {
+        padding: 48px;
     }
 }
 
@@ -96,6 +103,9 @@ mobile devices with less than 282 pixel screenwidth have to scroll :(
         padding: 5vw 5vw 2vw 5vw;
         background-color: #fff;
     }
+    .mihamm-scale {
+        padding: 12px;
+    }
 }
 
 /* Landscape phones and portrait tablets */
@@ -103,11 +113,17 @@ mobile devices with less than 282 pixel screenwidth have to scroll :(
     .day-image {
         visibility: hidden;
     }
+    .mihamm-scale {
+        padding: 12px;
+    }
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
     .day-image {
         visibility: hidden;
+    }
+    .mihamm-scale {
+        padding: 12px;
     }
 }
