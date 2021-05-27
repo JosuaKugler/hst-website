@@ -61,3 +61,20 @@
   });
 
 })(jQuery); // End of use strict
+
+
+// fade in/out picture of Mihamm from https://stackoverflow.com/questions/48202389/fade-image-on-scrolling
+/* <script type="text/javascript">
+  $(function(){
+  var element = $('.top');
+  $(window).scroll(function () {
+  if ($(this).scrollTop() > 100) {
+  element.fadeIn();
+}
+  else {
+  element.fadeOut();
+}
+});
+});
+</script>
+<img th:src="@{/img/bc.jpg}" class="top"/> */
