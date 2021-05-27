@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="375pt" height="375pt" viewBox="0 0 375 375">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+version="1.1" width="375pt" height="150pt" viewBox="0 130 375 150">
 <g enable-background="new">
 <clipPath id="cp0">
 <path transform="matrix(.24,0,0,.24,0,0)" d="M 0 0 L 1562.5 0 L 1562.5 1593.75 L 0 1593.75 Z " fill-rule="evenodd"/>
@@ -56,23 +57,23 @@
 <symbol id="font_3_9a">
 <path d="M .098000008 0 L .098000008 .010000001 C .114 .010000001 .12400001 .014666666 .128 .024 C .13266666 .033999999 .135 .04566667 .135 .059000005 L .135 .53800007 C .135 .5446667 .13166668 .54800006 .12500002 .54800006 C .12233335 .54800006 .11866667 .547 .11400001 .545 L 0 .509 L 0 .545 L .23300001 .62600007 L .23300001 .59900006 C .22233336 .59433338 .21366668 .587 .20700002 .577 C .20100002 .56700006 .19866669 .5553334 .20000002 .54200008 L .20000002 .063 C .2 .049000008 .20233335 .03666667 .20700002 .026 C .21166669 .015333335 .22233336 .010000001 .23900001 .010000001 L .23900001 0 L .098000008 0 Z "/>
 </symbol>
-<use xlink:href="#font_3_18" transform="matrix(18.480828,0,0,-18.480828,77.35503,260.16239)" fill="#606872"/>
-<use xlink:href="#font_3_25" transform="matrix(18.480828,0,0,-18.480828,92.26898,260.3472)" fill="#606872"/>
-<use xlink:href="#font_3_b" transform="matrix(18.480828,0,0,-18.480828,110.15834,260.3472)" fill="#606872"/>
-<use xlink:href="#font_3_18" transform="matrix(18.480828,0,0,-18.480828,125.79306,260.16239)" fill="#606872"/>
-<use xlink:href="#font_3_30" transform="matrix(18.480828,0,0,-18.480828,140.68854,260.31025)" fill="#606872"/>
-<use xlink:href="#font_3_b" transform="matrix(18.480828,0,0,-18.480828,153.58809,260.3472)" fill="#606872"/>
-<use xlink:href="#font_3_18" transform="matrix(18.480828,0,0,-18.480828,169.22281,260.16239)" fill="#606872"/>
-<use xlink:href="#font_3_34" transform="matrix(18.480828,0,0,-18.480828,184.2846,260.3472)" fill="#606872"/>
-<use xlink:href="#font_3_20" transform="matrix(18.480828,0,0,-18.480828,198.8659,260.16239)" fill="#606872"/>
-<use xlink:href="#font_3_32" transform="matrix(18.480828,0,0,-18.480828,210.5827,260.16239)" fill="#606872"/>
-<use xlink:href="#font_3_23" transform="matrix(18.480828,0,0,-18.480828,223.11264,260.16239)" fill="#606872"/>
-<use xlink:href="#font_3_17" transform="matrix(18.480828,0,0,-18.480828,238.2299,260.3472)" fill="#606872"/>
-<use xlink:href="#font_3_f" transform="matrix(18.480828,0,0,-18.480828,254.30814,260.16239)" fill="#606872"/>
-<use xlink:href="#font_3_3" transform="matrix(18.480828,0,0,-18.480828,266.22825,260.16239)" fill="#606872"/>
-<use xlink:href="#font_3_ae" transform="matrix(18.480828,0,0,-18.480828,274.9142,251.73513)" fill="#606872"/>
-<use xlink:href="#font_3_c1" transform="matrix(18.480828,0,0,-18.480828,281.38249,260.16239)" fill="#606872"/>
-<use xlink:href="#font_3_9a" transform="matrix(18.480828,0,0,-18.480828,292.7851,260.16239)" fill="#606872"/>
+<use xlink:href="#font_3_18" transform="matrix(18.480828,0,0,-18.480828,77.35503,260.16239)" fill="#ffffff"/>
+<use xlink:href="#font_3_25" transform="matrix(18.480828,0,0,-18.480828,92.26898,260.3472)" fill="#ffffff"/>
+<use xlink:href="#font_3_b" transform="matrix(18.480828,0,0,-18.480828,110.15834,260.3472)" fill="#ffffff"/>
+<use xlink:href="#font_3_18" transform="matrix(18.480828,0,0,-18.480828,125.79306,260.16239)" fill="#ffffff"/>
+<use xlink:href="#font_3_30" transform="matrix(18.480828,0,0,-18.480828,140.68854,260.31025)" fill="#ffffff"/>
+<use xlink:href="#font_3_b" transform="matrix(18.480828,0,0,-18.480828,153.58809,260.3472)" fill="#ffffff"/>
+<use xlink:href="#font_3_18" transform="matrix(18.480828,0,0,-18.480828,169.22281,260.16239)" fill="#ffffff"/>
+<use xlink:href="#font_3_34" transform="matrix(18.480828,0,0,-18.480828,184.2846,260.3472)" fill="#ffffff"/>
+<use xlink:href="#font_3_20" transform="matrix(18.480828,0,0,-18.480828,198.8659,260.16239)" fill="#ffffff"/>
+<use xlink:href="#font_3_32" transform="matrix(18.480828,0,0,-18.480828,210.5827,260.16239)" fill="#ffffff"/>
+<use xlink:href="#font_3_23" transform="matrix(18.480828,0,0,-18.480828,223.11264,260.16239)" fill="#ffffff"/>
+<use xlink:href="#font_3_17" transform="matrix(18.480828,0,0,-18.480828,238.2299,260.3472)" fill="#ffffff"/>
+<use xlink:href="#font_3_f" transform="matrix(18.480828,0,0,-18.480828,254.30814,260.16239)" fill="#ffffff"/>
+<use xlink:href="#font_3_3" transform="matrix(18.480828,0,0,-18.480828,266.22825,260.16239)" fill="#ffffff"/>
+<use xlink:href="#font_3_ae" transform="matrix(18.480828,0,0,-18.480828,274.9142,251.73513)" fill="#ffffff"/>
+<use xlink:href="#font_3_c1" transform="matrix(18.480828,0,0,-18.480828,281.38249,260.16239)" fill="#ffffff"/>
+<use xlink:href="#font_3_9a" transform="matrix(18.480828,0,0,-18.480828,292.7851,260.16239)" fill="#ffffff"/>
 </g>
 <clipPath id="cp4">
 <path transform="matrix(.24,0,0,.24,0,0)" d="M 0 0 L 1562.5 0 L 1562.5 1593.75 L 0 1593.75 Z "/>
