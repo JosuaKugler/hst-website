@@ -79,8 +79,7 @@
         </header>
 
         <section class="page-section bg-light" id="program">
-
-            <div class="container m-5">
+            <div class="container">
                 <div class="container">
                     <nav class="navbar">
                         <ul class="nav nav-pills " id="navList">
@@ -111,24 +110,40 @@
                         <li class="sr-only" data-target="#programCarouse" data-slide-to="5"></li>
 
                     </ol>
-                    <div class="carousel-inner bg-dark">
+                    <div data-spy="scroll" data-target="" class="carousel-inner bg-dark ">
                         <div class="carousel-item active" id="montag" >
-                            <img src="assets/tage/montag.png" class="d-block">
+                            <div class="row">
+                                <div class="col day-image">
+                                    <img src="assets/img/tage/cropped/montag.svg" class="d-block">
+                                </div>
+                                <div class="col m-5 text-light" style="width: 30vw;">
+                                    <h2>Programm</h2><br>
+                                    Closer to me
+                                </div>
+                            </div>
                         </div>
                         <div class="carousel-item" id="dienstag" >
-                            <img src="assets/tage/dienstag.png" class="d-block">
+                            <div class="row">
+                                <div class="col day-image">
+                                    <img src="assets/img/tage/cropped/dienstag.svg" class="d-block">
+                                </div>
+                                <div class="col m-5 text-light" style="width: 30vw;">
+                                    <h2>Programm</h2><br>
+                                    Closer to me
+                                </div>
+                            </div>
                         </div>
                         <div class="carousel-item" id="mittwoch">
-                            <img src="assets/tage/mittwoch.png" class="d-block">
+                            <img src="assets/img/tage/mittwoch.svg" class="d-block">
                         </div>
                         <div class="carousel-item" id="donnerstag">
-                            <img src="assets/tage/donnerstag.png" class="d-block">
+                            <img src="assets/img/tage/donnerstag.svg" class="d-block">
                         </div>
                         <div class="carousel-item" id="freitag">
-                            <img src="assets/tage/freitag.png" class="d-block">
+                            <img src="assets/img/tage/freitag.svg" class="d-block">
                         </div>
                         <div class="carousel-item" id="samstag">
-                            <img src="assets/tage/samstag.png" class="d-block">
+                            <img src="assets/img/tage/samstag.svg" class="d-block">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#programCarousel" role="button" data-slide="prev">

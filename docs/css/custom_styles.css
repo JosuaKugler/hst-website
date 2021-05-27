@@ -2,3 +2,41 @@
     font-size: 2rem;
     font-family: 'Raleway', sans-serif;
 }
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    .day-image {
+        padding: 10vw 5vw 10vw 5vw;
+        background-color: #fff;
+    }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .day-image {
+        padding: 10vw 5vw 10vw 5vw;
+        background-color: #fff;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .day-image {
+        padding: 5vw 5vw 2vw 5vw;
+        background-color: #fff;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .day-image {
+        visibility: hidden;
+    }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    .day-image {
+        visibility: hidden;
+    }
+}
