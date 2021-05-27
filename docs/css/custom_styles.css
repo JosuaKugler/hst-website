@@ -1,10 +1,34 @@
+
+
 .day {
     font-size: 1.6rem;
     font-family: 'Raleway', sans-serif;
 }
 
+@media (max-width: 440px) {
+    .day {
+        margin: 0;
+        padding: 8px 8px 8px 8px;
+    }
+}
+@media (max-width: 330px) {
+    .day {
+        margin: 0;
+        padding: 8px 4px 8px 4px;
+    }
+}
+/*
+mobile devices with less than 282 pixel screenwidth have to scroll :(
+ */
+
 .nav-item {
     z-index: 1031;
+}
+
+@media (max-width: 991px) {
+    .next-icon {
+        display: none;
+    }
 }
 
 @media (min-width: 768px) {
