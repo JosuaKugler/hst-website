@@ -79,25 +79,25 @@
         </header>
 
         <section class="page-section bg-light" id="program">
+            <div class="sticky-top container pt-2" style="z-index: 1030;-webkit-mask-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255,255,255) 30%, rgba(0,0,0,0));">
+                <nav class="bg-white pl-1"  id="navbar-days">
+                    <ul class="nav nav-pills " id="navList">
+                        <li class="nav-item"><a class="nav-link active day" href="#montag" data-target="#programCarousel" data-slide-to="0" data-toggle="pill">MO</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link day" href="#dienstag" data-target="#programCarousel" data-slide-to="1" data-toggle="pill">DI</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link day" href="#mittwoch" data-target="#programCarousel" data-slide-to="2" data-toggle="pill">MI</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link day" href="#donnerstag" data-target="#programCarousel" data-slide-to="3" data-toggle="pill">DO</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link day" href="#freitag" data-target="#programCarousel" data-slide-to="4" data-toggle="pill">FR</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link day" href="#samstag" data-target="#programCarousel" data-slide-to="5" data-toggle="pill">SA</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             <div class="container">
-                <div class="container">
-                    <nav class="navbar" id="navbar-days">
-                        <ul class="nav nav-pills " id="navList">
-                            <li class="nav-item"><a class="nav-link active day" href="#montag" data-target="#programCarousel" data-slide-to="0" data-toggle="pill">MO</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link day" href="#dienstag" data-target="#programCarousel" data-slide-to="1" data-toggle="pill">DI</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link day" href="#mittwoch" data-target="#programCarousel" data-slide-to="2" data-toggle="pill">MI</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link day" href="#donnerstag" data-target="#programCarousel" data-slide-to="3" data-toggle="pill">DO</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link day" href="#freitag" data-target="#programCarousel" data-slide-to="4" data-toggle="pill">FR</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link day" href="#samstag" data-target="#programCarousel" data-slide-to="5" data-toggle="pill">SA</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
                 <!-- Carousel-->
                 <div id="programCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
                     <!--Indicators-->
@@ -128,29 +128,61 @@
                                 </div>
                                 <div class="col m-5 text-light" style="width: 30vw;">
                                     <h2>Programm</h2><br>
-                                    Closer to me
+                                    Closer to the Edge
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item" id="mittwoch">
-                            <img src="assets/img/tage/mittwoch.svg" class="d-block">
+                            <div class="row">
+                                <div class="col day-image">
+                                    <img src="assets/img/tage/cropped/mittwoch.svg" class="d-block">
+                                </div>
+                                <div class="col m-5 text-light" style="width: 30vw;">
+                                    <h2>Programm</h2><br>
+                                    Closer Together
+                                </div>
+                            </div>
                         </div>
                         <div class="carousel-item" id="donnerstag">
-                            <img src="assets/img/tage/donnerstag.svg" class="d-block">
+                            <div class="row">
+                                <div class="col day-image">
+                                    <img src="assets/img/tage/cropped/donnerstag.svg" class="d-block">
+                                </div>
+                                <div class="col m-5 text-light" style="width: 30vw;">
+                                    <h2>Programm</h2><br>
+                                    Closer to Reality
+                                </div>
+                            </div>
                         </div>
                         <div class="carousel-item" id="freitag">
-                            <img src="assets/img/tage/freitag.svg" class="d-block">
+                            <div class="row">
+                                <div class="col day-image">
+                                    <img src="assets/img/tage/cropped/freitag.svg" class="d-block">
+                                </div>
+                                <div class="col m-5 text-light" style="width: 30vw;">
+                                    <h2>Programm</h2><br>
+                                    Closer to Heaven
+                                </div>
+                            </div>
                         </div>
                         <div class="carousel-item" id="samstag">
-                            <img src="assets/img/tage/samstag.svg" class="d-block">
+                            <div class="row">
+                                <div class="col day-image">
+                                    <img src="assets/img/tage/cropped/samstag.svg" class="d-block">
+                                </div>
+                                <div class="col m-5 text-light" style="width: 30vw;">
+                                    <h2>Programm</h2><br>
+                                    Close to God
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#programCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#programCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="false"></span>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
@@ -329,17 +361,20 @@
         days = ['montag', 'dienstag', 'mittwoch', 'donnerstag', 'freitag', 'samstag'];
         //window.onload = function() {console.log("hi"); document.getElementById('programCarousel').addEventListener("slide", function () {console.log("slide event");});}
         $(document).ready(function() {
-            $('#programCarousel').on('slid.bs.carousel', function (event) {
-                console.log($(this));
-                activeslide = $(this).find('.active')[1];
-                newweekday = activeslide.id;
-                oldweekday = days[(days.indexOf(newweekday) + 5) % 6];
+            $('#programCarousel').on('slide.bs.carousel', async function (event) {
+                console.log(event);
+                oldweekday = days[event.from]
+                newweekday = days[event.to]
                 oldlink = "a[href='#" + oldweekday + "']"
                 navOldWeekDay = $('#navList').find(oldlink)[0];
-                navOldWeekDay.classList.remove("active");
                 newlink = "a[href='#" + newweekday + "']"
                 navNewWeekDay = $('#navList').find(newlink)[0];
-                navNewWeekDay.classList.add("active");
+                await setTimeout(function() {
+                    navNewWeekDay.classList.add("active");
+                }, 100);
+                await setTimeout(function() {
+                    navOldWeekDay.classList.remove("active");
+                }, 150);
             });
         });
     </script>

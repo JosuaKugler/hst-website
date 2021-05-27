@@ -1,6 +1,10 @@
 .day {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: 'Raleway', sans-serif;
+}
+
+.nav-item {
+    z-index: 1031;
 }
 
 /* Large desktops and laptops */
