@@ -90,16 +90,20 @@ function callModal(type) {
   var content;
   switch (type) {
     case "Mitarbeiten":
-      content="Toller Text zum Thema Mitarbeiten";
+      content="Komm in eine unserer Gruppen (von Evangelisationsaktionen über Anspiel, Deko und Verpflegung, creative communications und Gebet und Seelsorge ist alles dabei!), lerne neue Leute kennen und staune, wie sehr Gott dich in seinem Team will!";
       break;
     case "Bewegen":
-      content="Toller Text zum Thema Bewegen";
+      content="Melde dich super gerne bei uns, wenn du eine spontane Aktion in der Woche starten willst - deine Ideen können ganz viel Freude schenken, zum Nachdenken anregen und Großes bewirken!";
       break;
     case "Beten":
-      content="Toller Text zum Thema Beten";
+      content="Bei der Vorbereitung der Hochschultage wollen wir Gott aktiv mit einbeziehen und vertrauen darauf, dass unser Gebet Kraft hat, Veränderung bringt und die Hochschultage zum Strahlen bringt!";
       break;
     case "Finanzieren":
-      content="Toller Text zum Thema Finanzieren";
+      content="Falls du uns gerne auch finanziell bei der Bezahlung von Honoraren, Flyern, Technik & Material unterstützen willst, freuen wir uns sehr über eine Spende an " +
+          "Initiative Gemeinde und Gebetshaus e.V. Heidelberg, " +
+          "IBAN: DE56 6725 0020 0009 3020 77, " +
+          "BIC: SOLADES1HDB, " +
+          "Verwendungszweck: ConnAction";
       break;
   }
   modal.find('.modal-body').text(content);
