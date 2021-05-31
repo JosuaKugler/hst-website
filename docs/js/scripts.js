@@ -82,12 +82,31 @@
   <img th:src="@{/img/bc.jpg}" className="mihamm"/> */
 
 
+function callModal(type) {
+  $('#exampleModal').modal('show');
+  console.log(type);
+  var modal = $('#exampleModal');
+  modal.find('.modal-title').text(type);
+  var content;
+  switch (type) {
+    case "Mitarbeiten":
+      content="Toller Text zum Thema Mitarbeiten";
+      break;
+    case "Bewegen":
+      content="Toller Text zum Thema Bewegen";
+      break;
+    case "Beten":
+      content="Toller Text zum Thema Beten";
+      break;
+    case "Finanzieren":
+      content="Toller Text zum Thema Finanzieren";
+      break;
+  }
+  modal.find('.modal-body').text(content);
+}
 
 
-// modals activation condition
-  $('#myModal').on('shown.bs.modal', function () {
-  $('#myinput').trigger('focus')
-})
+
 
 
 

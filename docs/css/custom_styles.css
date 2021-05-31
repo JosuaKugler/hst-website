@@ -128,3 +128,10 @@ mobile devices with less than 282 pixel screenwidth have to scroll :(
         padding: 12px;
     }
 }
+
+.action-icon {
+    max-width: 190px;
+    padding: 0 20px 0 20px;
+    margin: auto;
+    cursor: pointer;
+}
