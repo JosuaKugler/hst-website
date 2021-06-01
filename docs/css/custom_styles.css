@@ -31,6 +31,8 @@ body {
 
 .mihamm-img {
     mask-image: linear-gradient(to bottom, rgba(248, 249,250,0), rgba(248, 249,250,0.8) 30%, rgba(255, 0,0,0.8) 70%, rgba(255, 0,0,0.3) 80%, rgba(0,0,0, 0));
+    -webkit-mask-image: linear-gradient(to bottom, rgba(248, 249,250,0), rgba(248, 249,250,0.8) 30%, rgba(255, 0,0,0.8) 70%, rgba(255, 0,0,0.3) 80%, rgba(0,0,0, 0));
+
     /*-webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
      */
     max-width: 100%;
