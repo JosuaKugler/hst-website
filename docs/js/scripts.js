@@ -99,14 +99,14 @@ function callModal(type) {
       content="Bei der Vorbereitung der Hochschultage wollen wir Gott aktiv mit einbeziehen und vertrauen darauf, dass unser Gebet Kraft hat, Veränderung bringt und die Hochschultage zum Strahlen bringt!";
       break;
     case "Finanzieren":
-      content="Falls du uns gerne auch finanziell bei der Bezahlung von Honoraren, Flyern, Technik & Material unterstützen willst, freuen wir uns sehr über eine Spende an " +
-          "Initiative Gemeinde und Gebetshaus e.V. Heidelberg, " +
-          "IBAN: DE56 6725 0020 0009 3020 77, " +
-          "BIC: SOLADES1HDB, " +
+      content="Falls du uns gerne auch finanziell bei der Bezahlung von Honoraren, Flyern, Technik & Material unterstützen willst, freuen wir uns sehr über eine Spende an <br><br>" +
+          "<strong> Initiative Gemeinde und Gebetshaus e.V. Heidelberg </strong><br>" +
+          "IBAN: DE56 6725 0020 0009 3020 77, <br>" +
+          "BIC: SOLADES1HDB, <br>" +
           "Verwendungszweck: ConnAction";
       break;
   }
-  modal.find('.modal-body').text(content);
+  modal.find('.modal-body').html(content);
 }
 
 
