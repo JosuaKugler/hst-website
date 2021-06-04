@@ -127,6 +127,7 @@ mobile devices with less than 282 pixel screenwidth have to scroll :(
 @media (max-width: 767px) {
     .day-image {
         visibility: hidden;
+        height: 0;
     }
     .mihamm-scale {
         padding: 12px;
