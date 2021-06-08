@@ -20,6 +20,7 @@ body {
     }
 }
 
+/*
 @media (max-width: 767px) {
     .mihamm {
         margin-bottom: -10vw;
@@ -27,9 +28,12 @@ body {
     }
 }
 
+ */
+
 .mihamm-mask {
-    mask-image: linear-gradient(to bottom, rgba(248, 249,250,0), rgba(248, 249,250,0.8) 30%, rgba(255, 0,0,0.8) 70%, rgba(255, 0,0,0.3) 80%, rgba(0,0,0, 0));
+    /*mask-image: linear-gradient(to bottom, rgba(248, 249,250,0), rgba(248, 249,250,0.8) 30%, rgba(255, 0,0,0.8) 70%, rgba(255, 0,0,0.3) 80%, rgba(0,0,0, 0));
     -webkit-mask-image: linear-gradient(to bottom, rgba(248, 249,250,0), rgba(248, 249,250,0.8) 30%, rgba(255, 0,0,0.8) 70%, rgba(255, 0,0,0.3) 80%, rgba(0,0,0, 0));
+     */
 }
 
 @media (max-width: 440px) {
