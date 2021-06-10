@@ -89,11 +89,14 @@ function callModal(type) {
   modal.find('.modal-title').text(type);
   var content;
   switch (type) {
-    case "Mitarbeiten":
-      content="Komm in eine unserer Gruppen (von Evangelisationsaktionen über Anspiel, Deko und Verpflegung, creative communications und Gebet und Seelsorge ist alles dabei!), lerne neue Leute kennen und staune, wie sehr Gott dich in seinem Team will! <br><br> Schreib uns einfach an: <a href='mailto:kontakt@hst-heidelberg.de'>kontakt@hst-heidelberg.de</a>";
+    case "Mitmachen":
+      content="Komm in eine unserer Gruppen (von Evangelisationsaktionen über Anspiel, Deko und Verpflegung, creative communications und Gebet und Seelsorge ist alles dabei!), " +
+          "lerne neue Leute kennen und staune, wie sehr Gott dich in seinem Team will! <br><br> " +
+          "Nähere Infos findest du in diesem <a href='https://docs.google.com/spreadsheets/d/1YVP8OHQj3Si_5n6vt_YnAH2GnRiqlWTv15FCpt8We-U/edit#gid=0'>Spreadsheet</a>.";
       break;
     case "Bewegen":
-      content="Melde dich super gerne bei uns, wenn du eine spontane Aktion in der Woche starten willst - deine Ideen können ganz viel Freude schenken, zum Nachdenken anregen und Großes bewirken! <br><br> Schreib uns einfach an: <a href='mailto:kontakt@hst-heidelberg.de'>kontakt@hst-heidelberg.de</a>";
+      content="Melde dich super gerne bei uns, wenn du eine spontane Aktion in der Woche starten willst - deine Ideen können ganz viel Freude schenken, zum Nachdenken anregen und Großes bewirken! <br><br> " +
+          "Tritt einfach der <a href='https://chat.whatsapp.com/Ign7NRTNrvy0AnOl3gMarH'>Whatsapp-Gruppe</a> bei oder schreib uns eine Mail: <a href='mailto:kontakt@hst-heidelberg.de'>kontakt@hst-heidelberg.de</a>.";
       break;
     case "Beten":
       content="Bei der Vorbereitung der Hochschultage wollen wir Gott aktiv mit einbeziehen und vertrauen darauf, dass unser Gebet Kraft hat, Veränderung bringt und die Hochschultage zum Strahlen bringt!";
