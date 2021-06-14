@@ -99,7 +99,8 @@ function callModal(type) {
           "Tritt einfach der <a href='https://chat.whatsapp.com/Ign7NRTNrvy0AnOl3gMarH'>Whatsapp-Gruppe</a> bei oder schreib uns eine Mail: <a href='mailto:kontakt@hst-heidelberg.de'>kontakt@hst-heidelberg.de</a>.";
       break;
     case "Beten":
-      content="Bei der Vorbereitung der Hochschultage wollen wir Gott aktiv mit einbeziehen und vertrauen darauf, dass unser Gebet Kraft hat, Veränderung bringt und die Hochschultage zum Strahlen bringt!";
+      content="Bei der Vorbereitung der Hochschultage wollen wir Gott aktiv mit einbeziehen und vertrauen darauf, dass unser Gebet Kraft hat, Veränderung bringt und die Hochschultage zum Strahlen bringt! <br>" +
+          "Trag dich gerne fürs 24/7 Gebet während der Hochschultage in <a href='https://docs.google.com/spreadsheets/d/1skfjLmYJfClFqls8EgVtL6Cu5sfhe1QRXz3Zw5dzvFE/edit?usp=sharing'>diese Tabelle</a> ein.";
       break;
     case "Finanzieren":
       content="Falls du uns gerne auch finanziell bei der Bezahlung von Honoraren, Flyern, Technik & Material unterstützen willst, freuen wir uns sehr über eine Spende an <br><br>" +
